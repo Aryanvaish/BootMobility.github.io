@@ -32,50 +32,44 @@ body{
     display: flex;
     justify-content: center;
     background-color: #FF7C1A;
-}
+} 
 
 .navbar{
-    width: 99.2%;
-    height: 6.2rem;
-    background-color: #5A1F6A;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 8rem;
-    box-sizing: border-box;
-    display: none;
+  background-color: #5A1F6A;
+  width: 99.2%;
+  padding: 0 8rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
-.femlc{
-    font-family: 'Raleway', sans-serif;
-    color: #FF7C1A;
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-decoration: none;
+.navbar-brand {
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  font-family: 'Raleway', sans-serif;
+  color: #FF7C1A;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.nabvar-btns{
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.nabvar-btns li{
-    margin: 0 1.8rem;
-}
-
-.nabvar-btns li a{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.3rem;
+.nav-item a{
+  font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
     font-weight: 600;
     color: #ffffff;
     text-decoration: none;
 }
 
-.nabvar-btns li:first-child{
-    padding: 2.1rem 1.8rem;
-    background-color: #FF7C1A;    
+.navbar-nav li:first-child {
+  padding: 2.2rem 1.2rem;
+  background-color: #FF7C1A;
 }
+
+.navbar-nav li{
+  padding: 2.2rem 1.2rem;
+} 
 
 
 .banner-bacg{
@@ -886,7 +880,21 @@ form textarea{
 
 
 
+@media (max-width: 1300px){
 
+  .navbar {
+    padding: 0 3rem;
+  }
+
+  .nav-item a {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav li {
+    padding: 2.2rem 1rem;
+  }
+
+}
 
 
 
@@ -895,6 +903,7 @@ form textarea{
 
 
 @media (max-width: 1200px){
+
   .about-mobality p {
     font-size: 1.6rem;
     line-height: 2.6rem;
@@ -908,6 +917,55 @@ form textarea{
 }
 
 @media (max-width : 1110px){
+
+  .navbar-nav{
+    border-radius: 5rem;
+    margin: 2.5rem 0;
+    padding: 1.5rem 5rem;
+    background-color: #FF7C1A;
+  }
+
+  .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+
+  .navbar-toggler {
+    color: #FF7C1A;
+    background-color: #FF7C1A;
+    border: var(--bs-border-width) solid rgba(255, 255, 255, 0.5);
+  }
+
+  .navbar-nav li{
+  padding: 2.2rem 1.2rem;
+  background-color: #FF7C1A;
+}
+
+
+  .navbar {
+    padding: 0 1.8rem;
+  }
+
+  .nav-item a {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .navbar-nav li {
+    padding: 1rem .4rem;
+  }
+
+  .navbar-nav li:first-child {
+    padding: 1rem 1.2rem;
+    background-color: #FF7C1A;
+  }
+
+
+  .active{
+   color: #fff;
+  }
+
   .lorem-form{
     margin: 4rem 0 0 0;
   }
@@ -1396,4 +1454,4 @@ form textarea{
 
 
 
-} 
+}  
