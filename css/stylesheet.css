@@ -925,6 +925,10 @@ form textarea{
     background-color: #FF7C1A;
   }
 
+  .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+    color: #fff;
+  }
+
   .nav-link {
     display: flex;
     justify-content: center;
